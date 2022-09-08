@@ -1,0 +1,100 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.form-name{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 12.2vw;
+    margin-top: 3vh;
+    margin-left: 430px;
+}
+.form-surname{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 12.2vw;
+    margin-top: 3vh;
+    margin-left: 430px;
+}
+.form-mail{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 12.2vw;
+    margin-top: -13vh;
+    margin-left: 630px;
+
+}
+.form-num{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 12.2vw;
+    margin-top: 3vh;
+    margin-left: 630px;
+}
+
+.form>div>input{
+    border: 2px green solid;
+    border-radius: 10px;
+}
+
+.vlaj{
+    margin: 3px 5px;
+    display: inline-block;
+    outline: 2px solid blue;
+    outline-offset: -1px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%; 
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.check{
+    display: flex;
+    justify-content: center;;
+    margin: 2vh ;
+}
+    
+.check input{
+    display: none;
+}
+
+.check p{
+    margin:5px;
+    color: green
+}
+
+input[id="crazy1"]:checked ~ label[for='crazy1'],
+input[id="crazy2"]:checked ~ label[for='crazy2'],
+input[id="crazy3"]:checked ~ label[for='crazy3']{
+    outline: 5px solid black;
+    outline-offset: -5px;
+}
+
+.check2{
+    display: flex;
+    justify-content: center;
+}
+
+.check2 input{
+    width: 1.5vw;
+}
+
+#btn{
+    background-color: yellowgreen;
+    font-size: 18px;
+    width: 10vw;
+    height: 5vh;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

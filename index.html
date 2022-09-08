@@ -1,0 +1,76 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="form">
+        <h1>Связь</h1>
+        <div class="form-name">
+            <input type="text" placeholder="Имя" id="name">
+        </div>
+
+        <div class="form-surname">
+            <input type="text" placeholder="Фамилия" id="surname">
+        </div>
+
+        <div class="form-mail">
+            <input type="text" placeholder="e-mail" id="email">
+        </div>
+
+        <div class="form-num">
+            <input type="text" placeholder="Телефон" id="number">
+        </div>
+    </section>
+
+    <div class="check">
+        <input type="radio" name="crazy" id="crazy1">
+        <input type="radio" name="crazy" id="crazy2">
+        <input type="radio" name="crazy" id="crazy3">
+        <label for="crazy1" class="vlaj"></label>
+        <p>Обработка персональных данных</p>
+        <label for="crazy2" class="vlaj"></label>
+        <p>Отправка уведомлений на номер телефона</p>
+        <label for="crazy3"class="vlaj"></label>
+        <p>Лицензионные соглашение</p>
+    </div>
+    <input type="submit" style="height: auto" onclick="SendMessage()" id="btn">
+
+    <script type="text/javascript">
+        function SendMessage() {
+          const inputname = document.getElementById("name");
+          const inputemail = document.getElementById("email");
+          const inputsurname = document.getElementById("surname");
+          const inputnumber = document.getElementById("number");
+          if (inputname.value == "") {
+inputname.style.borderColor = "red";}
+else {
+          inputname.style.borderColor = "green";
+        }
+        if (inputemail.value == "") {
+inputemail.style.borderColor = "red";}
+else {
+          inputemail.style.borderColor = "green";
+        }
+        if (inputsurname.value == "") {
+inputsurname.style.borderColor = "red";}
+else {
+          inputsurname.style.borderColor = "green";
+        }
+         if (inputnumber.value == "") {
+inputnumber.style.borderColor = "red";}
+else {
+          inputnumber.style.borderColor = "green";
+        }
+          }
+        
+      </script>
+
+                <footer>
+            <script src="assets/script/index.js" type="text/javascript"></script>
+        </footer>
+    </body>
+</html>
